@@ -46,7 +46,7 @@ class Converter:
 
         self.to_c_button = Button(self.conversion_buttons_frame,
                                   text="To Centigrade", font="Arial 10 bold",
-                                  bg="Khakil",padx=10, pady=10)
+                                  bg="khaki1",padx=10, pady=10)
         self.to_c_button.grid(row=0, column=0)
 
         self.to_f_button = Button(self.conversion_buttons_frame,
@@ -55,7 +55,7 @@ class Converter:
         self.to_f_button.grid(row=0, column=1)
 
         # Answer Label (Row 4)
-
+        self.hist_help_frame = Frame(self.converter_frame)
 
         # History / Help Button (Row 5)
 

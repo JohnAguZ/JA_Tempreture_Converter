@@ -21,17 +21,17 @@ class Converter:
         self.converter_label.grid(row=0)
 
         # Help Button (Row 1)50
-        self.help_buton = Button(self.converter_frame, text="help",
+        self.help_button = Button(self.converter_frame, text="help",
                                  padx=10, pady=10, command=self.help)
-        self.help_buton.grid(row=1)
+        self.help_button.grid(row=1)
 
     def help(self):
         print("You asked for help")
-        get_help = Help()
+        get_help = Help(self)
         get_help.help_text.configure(text="Help text goes here")
 
 class Help:
-    def __int__(self, partner):
+    def __init__(self, partner):
 
         background = "orange"
 
